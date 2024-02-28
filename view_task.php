@@ -45,7 +45,7 @@ include ("config.php");
 
                     <div class="col-md-12 mb-3">
                         <label for="priority" class="form-label">Priority</label>
-                        <select class="form-select" id="priority" name="priority" readonly>
+                        <select class="form-select" id="priority" name="priority" disabled>
                             <option value="Low" <?php if($row['priority'] == 'Low') echo 'selected'; ?>>Low</option>
                             <option value="Medium" <?php if($row['priority'] == 'Medium') echo 'selected'; ?>>Medium</option>
                             <option value="High" <?php if($row['priority'] == 'High') echo 'selected'; ?>>High</option>
