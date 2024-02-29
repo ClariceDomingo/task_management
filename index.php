@@ -54,9 +54,13 @@ include ("config.php");
                     <a type="button" class="btn btn-outline-primary" href="view_task.php?id=<?=$row['id'];?>">VIEW</a>
                     <a type="button" class="btn btn-outline-warning" href="edit_task.php?id=<?=$row['id'];?>">EDIT</a>
                     
-                    <form action="process.php" method="POST">
-                    <input type="hidden" name="id" value="<?= $row['id']; ?>">
-                    <button type="submit" class="btn btn-outline-danger" name="deleteButton">DELETE</button>
+                    <!-- <form action="process.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $row['id']; ?>">
+                        <button type="submit" class="btn btn-outline-danger" name="deleteButton">DELETE</button>
+                    </form> -->
+                    <form action="delete_task.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $row['id']; ?>">
+                        <button type="submit" class="btn btn-outline-danger" name="deleteButton">DELETE</button>
                     </form>
                 </td>
                         </tr>
